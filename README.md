@@ -16,7 +16,7 @@ other variables:
 
 
 Notes:
-based on weather conditions in a 4 months prior we can predict the count wtih a 95% accuracy 
+based on weather conditions in a 4 months prior we can predict the count wtih a 95% accuracy.
 
 
 Tools:
@@ -37,10 +37,13 @@ Communication:
 slack
 
 
-
-
 Before next week: (Next Meeting Saturday 10:00 AM)
 - John:
 - Lasitha:
 - Jeremy: weather data Bonneville Dam
 - Mike: 
+
+Need to complete:
+- Build out table in postgres
+- Connect to machine learning model
+
