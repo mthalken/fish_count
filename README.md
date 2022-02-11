@@ -46,4 +46,5 @@ Before next week: (Next Meeting Saturday 10:00 AM)
 Need to complete:
 - Build out table in postgres
 - Connect to machine learning model
+- How to present/end product
 
