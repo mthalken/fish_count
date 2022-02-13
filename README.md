@@ -1,23 +1,36 @@
 # fish_count
 
 # Overview
-null - weather temp does not affect monthly fish catch 
+Based on weather conditions can predict fish populations?
+What are fish counts going to be next week, month, year?
+
+
+Null Hypothesis - weather conditions(air temperature, precipitation, water temperature) does not affect weekly steelhead counts 
 Supervised machine learning model
     - dependent variable: fish counts
+    - X = weather conditions 
 
-Notes:
-Based on weather conditions in a 4 months prior we can predict the count with a 95% accuracy.
+End Product:
+- Report that provides historical data
+- ML will give good or bad time to fish
+
 
 Other variables: 
 - hatcheries
 - ocean weather conditions
 
+Definitions:
+- Weather conditions: 
+- Stlhd - Adult Steelhead
+- TempC - Temperature in degrees Celsius 
+- TMAX - Max Temperature in degrees Fahrenheit
+- TMIN - Min Temperature in degrees Fahrenheit
+- PRCP - Precipitation in Inches
+
 
 ### Data
 - weather: https://www.ncei.noaa.gov/access/past-weather/Oregon
-- catch: https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp
 - count: http://www.cbr.washington.edu/dart/query/adult_daily
-- river temp: https://waterdata.usgs.gov/nwis/rt
 
 ### Tools:
 - Jupyter notebook 6.3.0: ETL Process
@@ -37,6 +50,11 @@ Other variables:
 - Slack
 - Zoom Meetings
 
+- X(Tech)- John
+- Circle(SQL Database)- Lasitha
+- Triangle(ML Model)- Jeremy
+- Square(Git)- Mike 
+
 
 ## Working Plan
 ### Before next meeting:
@@ -47,11 +65,13 @@ Other variables:
 
 ### Need to complete:
 - Build out table in postgres
-- Connect to machine learning model
-- How to present/end product
-- X-
-- Circle- 
-- Triangle-
-- Square- 
+    - fish count - total_data.csv
+    - weather - Bonneville_Dam_OR.csv
+    - table
+        - day 
+        - month
+        - week
+        - Stlhd
+
 
 
