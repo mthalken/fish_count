@@ -67,10 +67,10 @@ Definitions:
 - Mike: 
 
 ### Need to complete:
-- [ ] Build out table in postgres
-    - [ ] fish count - total_data.csv
-    - [ ] weather - Bonneville_Dam_OR.csv
-    - [ ] table
+- [x] Build out table in postgres
+    - [x] fish count - total_data.csv
+    - [x] weather - Bonneville_Dam_OR.csv
+    - [x] table
         - day 
         - month
         - week
