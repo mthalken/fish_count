@@ -15,7 +15,7 @@ End Product:
 - ML will give good or bad time to fish
 
 
-Other variables: 
+Other external variables: 
 - hatcheries
 - ocean weather conditions
 
@@ -50,7 +50,7 @@ Definitions:
 - Slack
 - Zoom Meetings
 
-- X(Tech)- John
+- X(Tech) - John
 - Circle(SQL Database)- Lasitha
 - Triangle(ML Model)- Jeremy
 - Square(Git)- Mike 
@@ -59,8 +59,8 @@ Definitions:
 ## Working Plan
 ### Before next meeting:
 - John:
-- Lasitha:
-- Jeremy: 
+- Lasitha: create SQL database
+- Jeremy: remove rows in weather data
 - Mike: 
 
 ### Need to complete:
