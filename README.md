@@ -52,18 +52,12 @@ Definitions:
 - Slack
 - Zoom Meetings
 
-<<<<<<< HEAD
-- X(Tech) - John
-- Circle(SQL Database)- Lasitha
-- Triangle(ML Model)- Jeremy
-- Square(Git)- Mike 
-=======
+
 ### Team Roles
 - John: X (Tech) 
 - Lasitha: Circle (SQL Database)
 - Jeremy: Triangle (ML Model) 
 - Mike: Square (Git)  
->>>>>>> 89497614f366bc5a717db70a0c2e419692020ef2
 
 
 ## Working Plan
