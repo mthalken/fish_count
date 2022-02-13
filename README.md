@@ -1,32 +1,31 @@
 # fish_count
 
 # Overview
-Based on weather conditions can predict fish populations?
-What are fish counts going to be next week, month, year?
-
+The purpose of this analysis is to see if we can use weather conditions including air temp, precipitation, and water temp to predict steelhead population counts. 
 
 Null Hypothesis - weather conditions(air temperature, precipitation, water temperature) does not affect weekly steelhead counts 
 Supervised machine learning model
     - dependent variable: fish counts
-    - X = weather conditions 
+    - X = weather conditions
+
+Questions:
+What are fish counts going to be next week, month, year?
 
 End Product:
 - Report that provides historical data
 - ML will give good or bad time to fish
-
 
 Other external variables: 
 - hatcheries
 - ocean weather conditions
 
 Definitions:
-- Weather conditions: 
+- Weather conditions: air temperature, precipitation, water temperature
 - Stlhd - Adult Steelhead
 - TempC - Temperature in degrees Celsius 
 - TMAX - Max Temperature in degrees Fahrenheit
 - TMIN - Min Temperature in degrees Fahrenheit
 - PRCP - Precipitation in Inches
-
 
 ### Data
 - weather: https://www.ncei.noaa.gov/access/past-weather/Oregon
@@ -35,25 +34,26 @@ Definitions:
 ### Tools:
 - Jupyter notebook 6.3.0: ETL Process
 - Database: pgAdmin and postgres
-- tensorflow 2.7.0
-- scikit-learn 1.0.2
-    - train_test_split
+- Tensorflow 2.7.0
+- Scikit-learn 1.0.2
+    - Train_test_split
     - StandardScaler
-- pandas
+- Pandas
 - Visual Studio Code 1.60.2
 - Tableau
-- matplotlib
-- numpy
-- conda
+- Matplotlib
+- Numpy
+- Conda
 
-### Team Communication:
+### Team Communication
 - Slack
 - Zoom Meetings
 
-- X(Tech) - John
-- Circle(SQL Database)- Lasitha
-- Triangle(ML Model)- Jeremy
-- Square(Git)- Mike 
+### Team Roles
+- John: X (Tech) 
+- Lasitha: Circle (SQL Database)
+- Jeremy: Triangle (ML Model) 
+- Mike: Square (Git)  
 
 
 ## Working Plan
@@ -64,10 +64,10 @@ Definitions:
 - Mike: 
 
 ### Need to complete:
-- Build out table in postgres
-    - fish count - total_data.csv
-    - weather - Bonneville_Dam_OR.csv
-    - table
+- [ ] Build out table in postgres
+    - [ ] fish count - total_data.csv
+    - [ ] weather - Bonneville_Dam_OR.csv
+    - [ ] table
         - day 
         - month
         - week
