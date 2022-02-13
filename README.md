@@ -34,7 +34,8 @@ Other variables:
 - conda
 
 ### Team Communication:
-    - slack
+- Slack
+- Zoom Meetings
 
 
 ## Working Plan
