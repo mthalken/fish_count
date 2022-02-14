@@ -4,12 +4,14 @@
 The purpose of this analysis is to see if we can use weather conditions including air temp, precipitation, and water temp to predict steelhead population counts. 
 
 Null Hypothesis - weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts 
-Supervised machine learning model
+
+Machine Learning:
+- Supervised machine learning model
     - dependent variable: fish counts
     - X = weather conditions
 
 Questions: 
-What are fish counts going to be next week, month, year?
+- What are fish counts going to be next week, month, year?
 
 
 End Product:
