@@ -31,8 +31,18 @@ Definitions:
 - PRCP - Precipitation in Inches
 
 ### Data
-- weather: https://www.ncei.noaa.gov/access/past-weather/Oregon
-- count: http://www.cbr.washington.edu/dart/query/adult_daily
+- weather: 
+    - [website](https://www.ncei.noaa.gov/access/past-weather/Oregon) 
+    - [data](https://github.com/mthalken/fish_count/blob/main/Resources/NOAA_csv/Bonneville_Dam_OR.csv)
+- count: 
+    - [website](http://www.cbr.washington.edu/dart/query/adult_daily)
+    - [initial data](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish)
+    - [cleaned data](https://github.com/mthalken/fish_count/blob/main/Resources/total_data.csv)
+- database ready data: 
+    - [stldh_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
+    - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
+
+
 
 ### Tools:
 - Jupyter notebook 6.3.0: ETL Process
