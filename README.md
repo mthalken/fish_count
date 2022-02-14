@@ -39,24 +39,24 @@ Definitions:
     - [initial data](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish)
     - [cleaned data](https://github.com/mthalken/fish_count/blob/main/Resources/total_data.csv)
 - database ready data: 
-    - [stldh_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
+    - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
     - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
 
 
 
 ### Tools:
-- Jupyter notebook 6.3.0: ETL Process
-- Database: pgAdmin and postgres
+- Jupyter notebook 6.3.0
+- pgAdmin 4 - postgreSQL 13.4
 - Tensorflow 2.7.0
 - Scikit-learn 1.0.2
     - Train_test_split
     - StandardScaler
-- Pandas
+- Pandas 1.3.5
 - Visual Studio Code 1.60.2
-- Tableau
-- Matplotlib
-- Numpy
-- Conda
+- Tableau 2021.4
+- Matplotlib 3.5.0
+- Numpy 1.20.3
+- Conda 4.11.0
 
 ### Team Communication
 - Slack
