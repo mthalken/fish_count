@@ -7,8 +7,8 @@ CREATE TABLE BonFishCounts (
 	WeekNumber INT NOT NULL,
 	LocationName VARCHAR(40),
 	CountDate DATE NOT NULL,
+	StlheadCount NUMERIC,
 	WaterTempC NUMERIC,
-	StlheadCount INT,
 	PRIMARY KEY (CountId)
 );
 
@@ -19,10 +19,27 @@ CREATE TABLE BonWeather (
 	MonthValue INT NOT NULL,
 	WeekNumber INT NOT NULL,
 	LocationName VARCHAR(40),
-	CountDate DATE NOT NULL,
+	DateRecorded DATE NOT NULL,
 	MaxTempF NUMERIC,
 	MinTempF NUMERIC,
 	PrecipitationInch NUMERIC,
+	PRIMARY KEY (CountId)
+);
+
+CREATE TABLE CombinedData (
+	CountId INT NOT NULL,
+	YearWk VARCHAR(7) NOT NULL,
+	YearValue INT NOT NULL,
+	MonthValue INT NOT NULL,
+	WeekNumber INT NOT NULL,
+	LocationName VARCHAR(40),
+	DateRecorded DATE NOT NULL,
+	MaxTempF NUMERIC,
+	MinTempF NUMERIC,
+	PrecipitationInch NUMERIC,
+	WaterTemp NUMERIC,
+	StlheadCount NUMERIC,
+	FOREIGN KEY (CountId) REFERENCES BonWeather (CountId),
 	FOREIGN KEY (CountId) REFERENCES BonFishCounts (CountId),
 	PRIMARY KEY (CountId)
 );
