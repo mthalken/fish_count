@@ -1,5 +1,23 @@
 # fish_count
 
+Visualization (Tableau)
+- Historical data with line plot (week and month)
+    - catch and counts
+    - weather conditions
+    - water temp
+- Gauge chart based on fish catch probability 
+- Future predictions (week and month)
+- Map with pin locations (hover text)
+    - highlight waterbody 
+
+- Filters
+    - location
+    - fish
+    - date
+
+
+
+
 # Overview
 The purpose of this analysis is to see if we can use weather conditions including air temp, precipitation, and water temp to predict steelhead population counts. 
 
@@ -11,7 +29,11 @@ Machine Learning:
     - X = weather conditions
 
 Questions: 
-- What are fish counts going to be next week, month, year?
+- Can fish populations be predicted?
+    - What are fish counts going to be next week, month, year?
+- Does climate and weather affect fish populations? 
+
+
 
 
 End Product:
@@ -22,6 +44,8 @@ End Product:
 Other external variables: 
 - hatcheries
 - ocean weather conditions
+- river weather conditions
+- sea lions
 
 
 Definitions:
@@ -43,6 +67,9 @@ Definitions:
 - database ready data: 
     - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
     - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
+
+https://dataremixed.com/2014/08/mapping-the-worlds-rivers/
+https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp
 
 
 
@@ -79,15 +106,7 @@ Definitions:
 - Jeremy: remove rows in weather data
 - Mike: 
 
-### Need to complete:
-- [x] Build out table in postgres
-    - [x] fish count - total_data.csv
-    - [x] weather - Bonneville_Dam_OR.csv
-    - [x] table
-        - day 
-        - month
-        - week
-        - Stlhd
+
 
 
 
