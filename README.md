@@ -1,19 +1,6 @@
 # fish_count
 
-Visualization (Tableau)
-- Historical data with line plot (week and month)
-    - catch and counts
-    - weather conditions
-    - water temp
-- Gauge chart based on fish catch probability 
-- Future predictions (week and month)
-- Map with pin locations (hover text)
-    - highlight waterbody 
 
-- Filters
-    - location
-    - fish
-    - date
 
 
 
@@ -35,10 +22,23 @@ Questions:
 
 
 
-
 End Product:
-- Report that provides historical data
-- ML will give good or bad time to fish
+- Tableau story presenting historical data and predictions of fish counts and fish catch counts
+    - Visualization (Tableau)
+        - Historical data with line plot (week and month)
+            - catch and counts
+            - weather conditions
+            - water temp
+        - Gauge chart based on fish catch probability 
+        - Future predictions (week and month)
+        - Map with pin locations (hover text)
+            - highlight waterbody 
+
+        - Filters
+            - location
+            - fish
+            - date
+    
 
 
 Other external variables: 
@@ -67,13 +67,16 @@ Definitions:
 - database ready data: 
     - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
     - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
+- map:
+    - [naturalearthdata.com](https://www.naturalearthdata.com/downloads/)
+- catch count:
+    - [dfw.state.or.us](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
 
-https://dataremixed.com/2014/08/mapping-the-worlds-rivers/
-https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp
 
 
 
 ### Tools:
+- GitHub 
 - Jupyter notebook 6.3.0
 - pgAdmin 4 - postgreSQL 13.4
 - Tensorflow 2.7.0
@@ -88,8 +91,9 @@ https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp
 - Conda 4.11.0
 
 ### Team Communication
-- Slack
-- Zoom Meetings
+- Slack - communication
+- Zoom Meetings - group work and meetings
+- GitHub - project file/project system 
 
 
 ### Team Roles
