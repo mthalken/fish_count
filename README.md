@@ -14,9 +14,6 @@ Compare to historical fish count against weather conditions with ML
 ML in jupyter then added column to dataset -> Tableau
     Date
 
-Database connection
-
-
 
 # Overview
 The purpose of this analysis is to see if we can use weather conditions including air temp, precipitation, and water temp to predict steelhead population counts and catch counts. 
