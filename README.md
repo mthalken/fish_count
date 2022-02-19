@@ -1,12 +1,22 @@
 # fish_count
 
+Average water temps per week
+Average fish count per week
+Find std dev for both to see consistency of data
+Enter data to fish (default at current date)
+    Reference week number off day and month
+Compare to historical fish count against weather conditions with ML
+    ML accuracy based on a window of time
+        Week
+        3 Month
+        1 year
 
-
-
+ML in jupyter then added column to dataset -> Tableau
+    Date
 
 
 # Overview
-The purpose of this analysis is to see if we can use weather conditions including air temp, precipitation, and water temp to predict steelhead population counts. 
+The purpose of this analysis is to see if we can use weather conditions including air temp, precipitation, and water temp to predict steelhead population counts and catch counts. 
 
 Null Hypothesis - weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts 
 
