@@ -1,15 +1,15 @@
 # fish_count
 
-Average water temps per week
-Average fish count per week
-Find std dev for both to see consistency of data
-Enter data to fish (default at current date)
-    Reference week number off day and month
-Compare to historical fish count against weather conditions with ML
-    ML accuracy based on a window of time
+- Average water temps per week
+- Average fish count per week
+- Find std dev for both to see consistency of data
+- Enter data to fish (default at current date)
+    - Reference week number off day and month
+- Compare to historical fish count against weather conditions with ML
+    - ML accuracy based on a window of time
         Week
-        3 Month
-        1 year
+        - 3 Month
+        - 1 year
 
 ML in jupyter then added column to dataset -> Tableau
     Date
