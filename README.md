@@ -43,6 +43,7 @@ We combined data from Columbia Basin Research website and looked at Weeks, Month
 -- Did we use any other of our datasets?
 
 After cleaning the data we can see that there is exponential growth with an increase in Steelhead Count in comparison to Max Air Temp and Water Temp. 
+
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Water_Temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Max_Water_Temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Min_Air_Temp.png)
@@ -84,34 +85,31 @@ Definitions:
 - Target Column: stlheadcount
 - Featured Columns: maxtempf, mintempf, precipitationinch, watertempf, stlheadcount
 
-![png](link)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/cleaned_data.png)
 
 
 ## Machine Learning Model
 Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a polynomial regression using a standard scaler. For our train test split we used the random state at 42 and the default test size of 25%. We choose the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
 Some limitations of a polynomial regression model is that the presence of a few outliers and have large effects on results and there are fewer model validation tools for detecting outliers than there are in linear models.
-    - other machine learning models we tried:
-        - Non-Negative Least Squares
-        - Ridge Regression and Classification
-        - Lasso
-        - Naive Random Oversampling
-        - SMOTE Oversampling
-        - Undersampling
-        - SMOTEEN
-        - Balanced Random Forest Classifier
-        - Easy Ensemble AdaBoost Classifier
-    - other scalers we tried:
-        - MinMaxScaler
-        - MaxABSScaler
-        - Robust Scaler
-        - Power Transformer with the yeo-johnson method
-        - Power Transformer with the box-cox method
-        - Quantile Transformer with uniform distribution
-        - Quantile Transformer with normal distribution
-        - Normalizer
-
- 
-
+- other machine learning models we tried:
+    - Non-Negative Least Squares
+    - Ridge Regression and Classification
+    - Lasso
+    - Naive Random Oversampling
+    - SMOTE Oversampling
+    - Undersampling
+    - SMOTEEN
+    - Balanced Random Forest Classifier
+    - Easy Ensemble AdaBoost Classifier
+- other scalers we tried:
+    - MinMaxScaler
+    - MaxABSScaler
+    - Robust Scaler
+    - Power Transformer with the yeo-johnson method
+    - Power Transformer with the box-cox method
+    - Quantile Transformer with uniform distribution
+    - Quantile Transformer with normal distribution
+    - Normalizer
 
 
 
