@@ -39,6 +39,7 @@ The purpose of this analysis is to see if wee can use machine learning on weathe
 
 
 ## Data Exploration
+[here](link)
 We combined data from Columbia Basin Research website and looked at Weeks, Months, Year, Maximum Temperature, Minimum Temperature, Precipitation, Water Temperature and Steelhead Count. We are attempting to answer our Null Hypothesis that weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts. 
 -- Did we use any other of our datasets?
 
@@ -67,9 +68,9 @@ We also wanted to see the Steelhead count by week and water temp by week and wat
 - database ready data: 
     - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
     - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
-- map:
+<!-- - map:
     - [naturalearthdata.com](https://www.naturalearthdata.com/downloads/)
-- catch count:
+- catch count: -->
     - [dfw.state.or.us](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
 
 Definitions:
@@ -82,6 +83,7 @@ Definitions:
 
 
 ## Data Preprocessing
+[here](link)
 - Target Column: stlheadcount
 - Featured Columns: maxtempf, mintempf, precipitationinch, watertempf, stlheadcount
 
@@ -89,6 +91,7 @@ Definitions:
 
 
 ## Machine Learning Model
+[here](link)
 Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a polynomial regression using a standard scaler. For our train test split we used the random state at 42 and the default test size of 25%. We choose the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
 Some limitations of a polynomial regression model is that the presence of a few outliers and have large effects on results and there are fewer model validation tools for detecting outliers than there are in linear models.
 - other machine learning models we tried:
@@ -111,9 +114,13 @@ Some limitations of a polynomial regression model is that the presence of a few 
     - Quantile Transformer with normal distribution
     - Normalizer
 
+## Database
+[here](link)
+
 
 
 ## Interactive Dashboard(In Progress)
+[here](link)
 Our interactive dashboard will allow users to put in a desired day to go fishing and our dashboard will return the following:
 - Machine Learning predictions from historic data on Steelhead counts
 - Current Weather Conditions
