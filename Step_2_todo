@@ -1,21 +1,3 @@
-# Week 2 Todo List
-
-Lasitha
-☐ 
-
-John
-☐ 
-
-Jeremy
-☐ 
-
-Mike
-☐ Groupby in the code - week
-
-
-
-
-
 
 GitHub
 ☐ code for ML
@@ -23,10 +5,10 @@ GitHub
 ☐ readme (with outline of project)
     ☐ commmunication protocols
     ☐ outline of project
-    ☐ Description of preliminary data preprocessing
-    ☐ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
-    ☐ Description of how data was split into training and testing sets
-    ☐ Explanation of model choice, including limitations and benefits
+    ✔ Description of preliminary data preprocessing @done(22-02-25 17:19)
+    ✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-25 17:19)
+    ✔ Description of how data was split into training and testing sets @done(22-02-25 17:33)
+    ✔ Explanation of model choice, including limitations and benefits @done(22-02-25 17:40)
     ☐ Description of the tool(s) that will be used to create the final dashboard
     ☐ Description of interactive element(s)
     ☐ Description of source data
