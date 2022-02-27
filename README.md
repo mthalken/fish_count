@@ -44,7 +44,7 @@ The purpose of this analysis is to see if wee can use machine learning on weathe
 
 
 ## Data Exploration
-Code: [Preliminary code](https://github.com/mthalken/fish_count/blob/mthalken/data_exploration.ipynb)
+Code: [Preliminary code](https://github.com/mthalken/fish_count/blob/main/Notebooks/data_exploration.ipynb)
 
 We combined data from Columbia Basin Research website and looked at Weeks, Months, Year, Maximum Temperature, Minimum Temperature, Precipitation, Water Temperature and Steelhead Count. We are attempting to answer our Null Hypothesis that weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts. 
 -- Did we use any other of our datasets?
@@ -102,7 +102,7 @@ To preprocess our data we combined our csv [files](https://github.com/mthalken/f
 
 ## Machine Learning Model
 Code: 
-- [Preliminary code](https://github.com/mthalken/fish_count/blob/mthalken/fish_ml_practice.ipynb)
+- [Preliminary code](https://github.com/mthalken/fish_count/blob/main/Notebooks/fish_ml_practice.ipynb)
 - [Testing Types of Linear Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/testing_types_of_linear_regression.ipynb)
 - [Polynomial Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression.ipynb)
 - [Polynomial Regression and Scaling](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression_%26_scaling.ipynb)
