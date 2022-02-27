@@ -1,26 +1,26 @@
 
 GitHub
-☐ code for ML
+✔ code for ML @done(22-02-27 12:00)
 ☐ exploratory analysis
 ☐ readme (with outline of project)
-    ☐ commmunication protocols
-    ☐ outline of project
+    ✔ commmunication protocols @done(22-02-27 11:41)
+    ✔ outline of project @done(22-02-27 11:41)
     ✔ Description of preliminary data preprocessing @done(22-02-25 17:19)
     ✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-25 17:19)
     ✔ Description of how data was split into training and testing sets @done(22-02-25 17:33)
     ✔ Explanation of model choice, including limitations and benefits @done(22-02-25 17:40)
-    ☐ Description of the tool(s) that will be used to create the final dashboard
+    ✔ Description of the tool(s) that will be used to create the final dashboard @done(22-02-27 11:42)
     ☐ Description of interactive element(s)
     ☐ Description of source data
-    ☐ Description of data Exploration
+    ✔ Description of data Exploration @done(22-02-27 11:42)
     ☐ Description of analysis phase
 ☐ 8 commits per person
 
 ML Model
-☐ Description of preliminary data preprocessing
-☐ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
-☐ Description of how data was split into training and testing sets
-☐ Explanation of model choice, including limitations and benefits
+✔ Description of preliminary data preprocessing @done(22-02-27 11:52)
+✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-27 11:56)
+✔ Description of how data was split into training and testing sets @done(22-02-27 11:53)
+✔ Explanation of model choice, including limitations and benefits @done(22-02-27 11:53)
 
 Database
 ☐ Database stores static data for use during the project
