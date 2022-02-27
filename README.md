@@ -39,7 +39,7 @@ The purpose of this analysis is to see if wee can use machine learning on weathe
 
 
 ## Data Exploration
-[here](link)
+[Preliminary code](https://github.com/mthalken/fish_count/blob/mthalken/data_exploration.ipynb)
 We combined data from Columbia Basin Research website and looked at Weeks, Months, Year, Maximum Temperature, Minimum Temperature, Precipitation, Water Temperature and Steelhead Count. We are attempting to answer our Null Hypothesis that weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts. 
 -- Did we use any other of our datasets?
 
@@ -83,7 +83,8 @@ Definitions:
 
 
 ## Data Preprocessing
-[here](link)
+[Combining Data](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/joining_data.ipynb)
+[Grouping](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/grouping_for_analysis.ipynb)
 - Target Column: stlheadcount
 - Featured Columns: maxtempf, mintempf, precipitationinch, watertempf, stlheadcount
 
@@ -91,7 +92,11 @@ Definitions:
 
 
 ## Machine Learning Model
-[here](link)
+[Preliminary code](https://github.com/mthalken/fish_count/blob/mthalken/fish_ml_practice.ipynb)
+[Testing Types of Linear Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/testing_types_of_linear_regression.ipynb)
+[Polynomial Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression.ipynb)
+[Polynomial Regression and Scaling](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression_%26_scaling.ipynb)
+[Refactored Machine Learning Model](link)
 Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a polynomial regression using a standard scaler. For our train test split we used the random state at 42 and the default test size of 25%. We choose the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
 Some limitations of a polynomial regression model is that the presence of a few outliers and have large effects on results and there are fewer model validation tools for detecting outliers than there are in linear models.
 - other machine learning models we tried:
