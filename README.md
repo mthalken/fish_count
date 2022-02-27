@@ -64,20 +64,20 @@ We also wanted to see the Steelhead count by week and water temp by week and wat
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Water_temp_by_Week_Number.png)
 
 ### Data
-- weather: 
-    - [website](https://www.ncei.noaa.gov/access/past-weather/Oregon) 
-    - [data](https://github.com/mthalken/fish_count/blob/main/Resources/NOAA_csv/Bonneville_Dam_OR.csv)
+- weather:  
+    - [data](https://github.com/mthalken/fish_count/blob/jpetty_branch/Resources/weather/dailyWeatherTable.csv)
 - count: 
     - [website](http://www.cbr.washington.edu/dart/query/adult_daily)
     - [initial data](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish)
-    - [cleaned data](https://github.com/mthalken/fish_count/blob/main/Resources/total_data.csv)
-- database ready data: 
+    - [cleaned data](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv)
+<!-- - database ready data: 
     - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
-    - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
+    - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv) -->
 <!-- - map:
-    - [naturalearthdata.com](https://www.naturalearthdata.com/downloads/)
-- catch count: -->
-    - [dfw.state.or.us](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
+    - [naturalearthdata.com](https://www.naturalearthdata.com/downloads/) -->
+- catch count:
+    - [website](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
+    - [data](https://github.com/mthalken/fish_count/blob/mthalken/Resources/refactored_data/CombinedCatchData.csv)
 
 Definitions:
 - Weather conditions: air temperature, precipitation, water temperature
