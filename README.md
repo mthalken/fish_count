@@ -39,10 +39,12 @@ The purpose of this analysis is to see if wee can use machine learning on weathe
 
 
 ## Data Exploration
+[Preliminary code](https://github.com/mthalken/fish_count/blob/mthalken/data_exploration.ipynb)
 We combined data from Columbia Basin Research website and looked at Weeks, Months, Year, Maximum Temperature, Minimum Temperature, Precipitation, Water Temperature and Steelhead Count. We are attempting to answer our Null Hypothesis that weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts. 
 -- Did we use any other of our datasets?
 
 After cleaning the data we can see that there is exponential growth with an increase in Steelhead Count in comparison to Max Air Temp and Water Temp. 
+
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Water_Temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Max_Water_Temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Min_Air_Temp.png)
@@ -66,9 +68,9 @@ We also wanted to see the Steelhead count by week and water temp by week and wat
 - database ready data: 
     - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
     - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv)
-- map:
+<!-- - map:
     - [naturalearthdata.com](https://www.naturalearthdata.com/downloads/)
-- catch count:
+- catch count: -->
     - [dfw.state.or.us](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
 
 Definitions:
@@ -81,41 +83,49 @@ Definitions:
 
 
 ## Data Preprocessing
+[Combining Data](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/joining_data.ipynb)
+[Grouping](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/grouping_for_analysis.ipynb)
 - Target Column: stlheadcount
 - Featured Columns: maxtempf, mintempf, precipitationinch, watertempf, stlheadcount
 
-![png](link)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/cleaned_data.png)
 
 
 ## Machine Learning Model
+[Preliminary code](https://github.com/mthalken/fish_count/blob/mthalken/fish_ml_practice.ipynb)
+[Testing Types of Linear Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/testing_types_of_linear_regression.ipynb)
+[Polynomial Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression.ipynb)
+[Polynomial Regression and Scaling](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression_%26_scaling.ipynb)
+[Refactored Machine Learning Model](link)
 Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a polynomial regression using a standard scaler. For our train test split we used the random state at 42 and the default test size of 25%. We choose the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
 Some limitations of a polynomial regression model is that the presence of a few outliers and have large effects on results and there are fewer model validation tools for detecting outliers than there are in linear models.
-    - other machine learning models we tried:
-        - Non-Negative Least Squares
-        - Ridge Regression and Classification
-        - Lasso
-        - Naive Random Oversampling
-        - SMOTE Oversampling
-        - Undersampling
-        - SMOTEEN
-        - Balanced Random Forest Classifier
-        - Easy Ensemble AdaBoost Classifier
-    - other scalers we tried:
-        - MinMaxScaler
-        - MaxABSScaler
-        - Robust Scaler
-        - Power Transformer with the yeo-johnson method
-        - Power Transformer with the box-cox method
-        - Quantile Transformer with uniform distribution
-        - Quantile Transformer with normal distribution
-        - Normalizer
+- other machine learning models we tried:
+    - Non-Negative Least Squares
+    - Ridge Regression and Classification
+    - Lasso
+    - Naive Random Oversampling
+    - SMOTE Oversampling
+    - Undersampling
+    - SMOTEEN
+    - Balanced Random Forest Classifier
+    - Easy Ensemble AdaBoost Classifier
+- other scalers we tried:
+    - MinMaxScaler
+    - MaxABSScaler
+    - Robust Scaler
+    - Power Transformer with the yeo-johnson method
+    - Power Transformer with the box-cox method
+    - Quantile Transformer with uniform distribution
+    - Quantile Transformer with normal distribution
+    - Normalizer
 
- 
-
+## Database
+[here](link)
 
 
 
 ## Interactive Dashboard(In Progress)
+[here](link)
 Our interactive dashboard will allow users to put in a desired day to go fishing and our dashboard will return the following:
 - Machine Learning predictions from historic data on Steelhead counts
 - Current Weather Conditions
