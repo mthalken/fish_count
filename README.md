@@ -59,6 +59,7 @@ There was also a significate decrease in Steelhead Count on days with increased 
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_precipitation.png)
 
 We also wanted to see the Steelhead count by week and water temp by week and water temp. 
+
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Week.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Max_air_temp_by_water_temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Water_temp_by_Week_Number.png)
@@ -95,7 +96,7 @@ Code:
 
 To preprocess our data we combined our csv [files](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish), found the target column and featured columns and dropped the NaN rows. We then grouped the data by day, month, and year with an aggregate mean to prepared for our machine learning model. 
 - Target Column: stlheadcount
-- Featured Columns: maxtempf, mintempf, precipitationinch, watertempf, stlheadcount
+- Featured Columns: maxtempf, mintempf, precipitationinch, and watertempf
 
 ![png](https://github.com/mthalken/fish_count/blob/main/Images/cleaned_data.png)
 
@@ -140,7 +141,7 @@ Code:
 
 
 ## Interactive Dashboard(In Progress)
-Code: [here](link)
+[Google Slides](https://docs.google.com/presentation/d/12xjKybODUNdbOfk8_LaIQnlpM5YYDo1VpuQSZEZ8MsU/edit?usp=sharing)
 
 Our interactive dashboard will allow users to put in a desired day to go fishing and our dashboard will return the following:
 - Machine Learning predictions from historic data on Steelhead counts
