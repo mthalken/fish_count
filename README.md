@@ -133,9 +133,17 @@ Some limitations of a polynomial regression model is that the presence of a few 
     - Normalizer
 
 ## Database
+The database that we chose to store the static data is PostgreSQL and pgAdmin is the tool that extracts the data from the database. The database is setup with four tables. They are **datevalue**, **bonweather**, **bonfishcounts**, and **combineddata**.
+- *datevalue:* The datevalue table stores the values for the year, month and weeknumber that can be referenced by any given date between 1/1/1990 through 12/31/2021.
+- *bonweather:* This table hold all weather data such as the max temperature, min temperature and the precipitation for any given date.
+- *bonfishcounts:* The bonfishcounts table hold the steelhead count and the water temperature for all data in the date range specified in the datavalue tabledescription.
+- *combineddata:* This table combines the data from the bonfishcounts, bonwether, and datevalue tables to produce a dataset that can be used later in the machine learning algorithm.
+
+The combineddata table is extracted into jupyter notebook where it can be used in analysis through machine learning.
+
 Code: 
-- [Database Connection](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb)
-- [SQL Schema](https://github.com/mthalken/fish_count/blob/main/Resources/fish_schema.sql)
+- The connection string where the data is extracted from the database is found here => [Database Connection](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb)
+- The schema that was used to create the tables are found here => [SQL Schema](https://github.com/mthalken/fish_count/blob/main/Resources/fish_schema.sql)
 
 
 
@@ -154,7 +162,7 @@ Our interactive dashboard will allow users to put in a desired day to go fishing
     - catch counts
 
 
-We will use Tableau and pdAdmin for our final project. 
+We will use Tableau and pgAdmin for our final project. 
     
 
 ## Discussion
