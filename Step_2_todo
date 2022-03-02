@@ -23,16 +23,23 @@ GitHub
 ✔ Most code necessary to complete machine learning portion of the project @done(22-03-01 18:46)
 ✔ One branch for each team member @done(22-03-01 18:47)
 ☐ Each team member has a total of 12 commits
+☐ 4- All code is clean, commented, easy to read, and adheres to a coding standard
+☐ 4- At least 3 images
+☐ 4- requirements.txt file
+☐ 4- Link to dashboard or link to video of dashboard demo
+☐ 4- 16 commits per person
 
 ML Model
 ✔ Description of preliminary data preprocessing @done(22-02-27 11:52)
 ✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-27 11:56)
 ✔ Description of how data was split into training and testing sets @done(22-02-27 11:53)
 ✔ Explanation of model choice, including limitations and benefits @done(22-02-27 11:53)
-☐  Description of feature engineering and the feature selection, including their decisionmaking process
+☐ Description of feature engineering and the feature selection, including their decisionmaking process
 ☐ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
 ☐ Description of how they have trained the model thus far, and any additional training that will take place
 ☐ Description of current accuracy score 
+☐ 4- Description and explanation of model's confusion matrix, including final accuracy score
+☐ 4- Addresses the question or problem the team is solving
 
 Database
 ✔ Database stores static data for use during the project @done(22-02-27 19:55)
@@ -49,14 +56,27 @@ Dashboard
 ☐ Images from the initial analysis
 ☐ Data(images or report) from the machine learning task
 ☐ At least one interactive element
+☐ 4- Dashboard is published or the submission includes a screen capture video of it in action. 
+
 
 Presentation
 ✔ Description of source data @done(22-02-27 20:15)
 ✔ Description of data Exploration @done(22-02-27 20:15)
 ✔ Description of analysis phase @done(22-02-27 20:15)
-☐ Selected Topic
+✔ Selected Topic @done(22-03-01 18:54)
 ☐ Reason why they selected their topic
-☐ Questions to hope to answer
-☐ Technologies, languages, tools, and algorithms used
+✔ Questions to hope to answer @done(22-03-01 18:54)
+✔ Technologies, languages, tools, and algorithms used @done(22-03-01 18:54)
 ☐ Slide in Google Slides
+☐ 4- Results of analysis
+☐ 4- Recommendation for future analysis
+☐ 4- Anything the team would have done differently
+☐ 4- Slides are primarily images or graphics (rather than text)
+☐ 4- Images are clear, in high-def, and directly illustrative of subject matter
+☐ 4- Live Presentation
+    ☐ 4- All team members present in equal proportions
+    ☐ 4- The team deonstrates interactivity of dashboard in real time
+    ☐ 4- The presentation falls within any time limits
+    ☐ 4- Submission includes speaker notes, flashcards, or a video of the presentation rehearsal
+
 
