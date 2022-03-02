@@ -1,42 +1,42 @@
 
 GitHub
-☐ code for ML
+✔ code for ML @done(22-02-27 12:00)
 ☐ exploratory analysis
 ☐ readme (with outline of project)
-    ☐ commmunication protocols
-    ☐ outline of project
+    ✔ commmunication protocols @done(22-02-27 11:41)
+    ✔ outline of project @done(22-02-27 11:41)
     ✔ Description of preliminary data preprocessing @done(22-02-25 17:19)
     ✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-25 17:19)
     ✔ Description of how data was split into training and testing sets @done(22-02-25 17:33)
     ✔ Explanation of model choice, including limitations and benefits @done(22-02-25 17:40)
-    ☐ Description of the tool(s) that will be used to create the final dashboard
+    ✔ Description of the tool(s) that will be used to create the final dashboard @done(22-02-27 11:42)
     ☐ Description of interactive element(s)
-    ☐ Description of source data
-    ☐ Description of data Exploration
+    ✔ Description of source data @done(22-02-27 12:19)
+    ✔ Description of data Exploration @done(22-02-27 11:42)
     ☐ Description of analysis phase
 ☐ 8 commits per person
 
 ML Model
-☐ Description of preliminary data preprocessing
-☐ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
-☐ Description of how data was split into training and testing sets
-☐ Explanation of model choice, including limitations and benefits
+✔ Description of preliminary data preprocessing @done(22-02-27 11:52)
+✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-27 11:56)
+✔ Description of how data was split into training and testing sets @done(22-02-27 11:53)
+✔ Explanation of model choice, including limitations and benefits @done(22-02-27 11:53)
 
 Database
-☐ Database stores static data for use during the project
+✔ Database stores static data for use during the project @done(22-02-27 19:55)
 ☐ Database interfaces with the project in some format (e.g., scraping updates the database)
-☐ Includes at least two tables (or collections, if using MongoDB)
-☐ Includes at least one join using the database language (not including any joins in Pandas)
-☐ Includes at least one connection string (using SQLAlchemy or PyMongo)
+✔ Includes at least two tables (or collections, if using MongoDB) @done(22-02-27 19:56)
+✔ Includes at least one join using the database language (not including any joins in Pandas) @done(22-02-27 19:56)
+✔ Includes at least one connection string (using SQLAlchemy or PyMongo) @done(22-02-27 19:56)
         Note: If you use a SQL database, you must provide your ERD with relationships.
 
 Dashboard
-☐ Storyboard on a Google Slide(s)
-☐ Description of the tool(s) that will be used to create the final dashboard
-☐ Description of interactive element(s)
+✔ Storyboard on a Google Slide(s) @done(22-02-27 20:14)
+✔ Description of the tool(s) that will be used to create the final dashboard @done(22-02-27 20:15)
+✔ Description of interactive element(s) @done(22-02-27 20:15)
 
 Presentation
-☐ Description of source data
-☐ Description of data Exploration
-☐ Description of analysis phase
+✔ Description of source data @done(22-02-27 20:15)
+✔ Description of data Exploration @done(22-02-27 20:15)
+✔ Description of analysis phase @done(22-02-27 20:15)
 
