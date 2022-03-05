@@ -1,7 +1,7 @@
 # Steelhead Count
 
 # Overview
-The purpose of this analysis is to see if wee can use machine learning on weather conditions including air temp, precipitation, and water temp to predict steelhead population counts at the Bonneville Dam on the Columbia River between Oregon and Washington.
+The purpose of this analysis is to see if wee can use machine learning on weather conditions including air temp, precipitation, and water temp to predict fish population counts at the Bonneville Dam on the Columbia River between Oregon and Washington. We want to be able to provide a tool for people to use to see wether based on historical data if the date they want to go fishing has been ideal and what the historical weather has been on that particular day. 
 
 ## Project Overview
 1. Perform exploratory analysis. 
@@ -37,11 +37,6 @@ The purpose of this analysis is to see if wee can use machine learning on weathe
 - Numpy 1.20.3
 - Conda 4.11.0
 
-### Team Communication
-- Slack - communication
-- Zoom Meetings - group work and meetings
-- GitHub - project file/project system 
-
 
 ## Data Exploration
 Code: [Preliminary code](https://github.com/mthalken/fish_count/blob/main/Notebooks/data_exploration.ipynb)
@@ -59,8 +54,7 @@ There was also a significate decrease in Steelhead Count on days with increased 
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_precipitation.png)
 
 We also wanted to see the Steelhead count by week and water temp by week and water temp. 
-
-![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Week.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Steelhead_Count_by_Week.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Max_air_temp_by_water_temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Water_temp_by_Week_Number.png)
 
@@ -83,10 +77,15 @@ We also wanted to see the Steelhead count by week and water temp by week and wat
 Definitions:
 - Weather conditions: air temperature, precipitation, water temperature
 - stlhdcount - Adult Steelhead Count
+- chinookcount - Adult Chinook Count
+- sockeyecount - Adult Sockeye Count
+- cohocount - Adult Coho Count
+- shadcount - Adult Shad Count
 - maxtempf - Maximum Temperature in degrees Fahrenheit 
 - mintempf - Minimum Temperature in degrees Fahrenheit
 - precipitationinch - Precipitation in Inches
 - watertempf - Water temperate in degrees Fahrenheit
+- countid - year, month, and day of recording
 
 
 ## Data Preprocessing
@@ -166,7 +165,6 @@ We will use Tableau and pgAdmin for our final project.
     
 
 ## Discussion
-
 Other external variables: 
 - hatcheries
 - ocean weather conditions
