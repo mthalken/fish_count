@@ -14,8 +14,18 @@ GitHub
     ✔ Description of source data @done(22-02-27 12:19)
     ✔ Description of data Exploration @done(22-02-27 11:42)
     ✔ Description of analysis phase @done(22-03-01 18:45)
-    ☐ Description of the communication protocols has been removed
+    ✔ Description of the communication protocols has been removed @done(22-03-04 16:45)
     ☐ Cohesive, structured outline of the project
+    ☐ Add catch data and description to data exploration section
+    ☐ Clean up data section with data used
+    ✔ Add to definitions @done(22-03-04 16:50)
+    ☐ Review data preprocessing section to add other fish and update notebooks
+    ☐ Update Machine learning section with new code and explanation
+    ☐ Add images of accuracy scores
+    ☐ Review Database section
+    ☐ Add images of dashboard to dashboard section
+    ☐ Discussion
+    ☐ Results
     ✔ Link to Google Slides draft presentation @done(22-03-01 18:51)
 ✔ 8 commits per person @done(22-03-01 18:47)
 ☐ Code is production ready
@@ -80,3 +90,7 @@ Presentation
     ☐ 4- Submission includes speaker notes, flashcards, or a video of the presentation rehearsal
 
 
+Tableau
+☐ Worksheets:
+    ☐ bar or line
+☐ Current weather conditions
