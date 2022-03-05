@@ -59,20 +59,23 @@ We also wanted to see the Steelhead count by week and water temp by week and wat
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Water_temp_by_Week_Number.png)
 
 ### Data
-- weather:  
-    - [data](https://github.com/mthalken/fish_count/blob/jpetty_branch/Resources/weather/dailyWeatherTable.csv)
-- count: 
+- Catch count:
+    - [website](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
+    - [original data](https://github.com/mthalken/fish_count/tree/main/Resources/Fish_catch)
+    - [cleaned data](https://github.com/mthalken/fish_count/blob/mthalken/Resources/refactored_data/CombinedCatchData.csv)
+- Count: 
     - [website](http://www.cbr.washington.edu/dart/query/adult_daily)
     - [initial data](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish)
     - [cleaned data](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv)
-<!-- - database ready data: 
-    - [stlhd_count.csv](https://github.com/mthalken/fish_count/blob/main/Resources/stlhd_count.csv)
-    - [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/bonWeather.csv) -->
-<!-- - map:
-    - [naturalearthdata.com](https://www.naturalearthdata.com/downloads/) -->
-- catch count:
-    - [website](https://www.dfw.state.or.us/resources/fishing/sportcatch_archives.asp)
-    - [data](https://github.com/mthalken/fish_count/blob/mthalken/Resources/refactored_data/CombinedCatchData.csv)
+- Machine learning data:
+    - [daily fish data](https://github.com/mthalken/fish_count/tree/main/Resources/refactored_data/daily_fish_groups)
+    - [weekly fish data](https://github.com/mthalken/fish_count/tree/main/Resources/refactored_data/weekly_fish_groups)
+    - [combined data](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/combineddata2.csv)
+- Weather:
+    - [website](https://www.ncei.noaa.gov/access/past-weather/Oregon)
+    - [original](https://github.com/mthalken/fish_count/blob/main/Resources/weather/Bonneville_Dam_OR.csv)
+    - [cleaned data](https://github.com/mthalken/fish_count/blob/jpetty_branch/Resources/weather/dailyWeatherTable.csv)
+    
 
 Definitions:
 - Weather conditions: air temperature, precipitation, water temperature
@@ -92,6 +95,7 @@ Definitions:
 Code: 
 - [Combining Data](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/joining_data.ipynb)
 - [Grouping](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/grouping_for_analysis.ipynb)
+- 
 
 To preprocess our data we combined our csv [files](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish), found the target column and featured columns and dropped the NaN rows. We then grouped the data by day, month, and year with an aggregate mean to prepared for our machine learning model. 
 - Target Column: stlheadcount
@@ -106,7 +110,7 @@ Code:
 - [Testing Types of Linear Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/testing_types_of_linear_regression.ipynb)
 - [Polynomial Regression](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression.ipynb)
 - [Polynomial Regression and Scaling](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression_%26_scaling.ipynb)
-- [Refactored Machine Learning Model](link)
+- [Refactored Machine Learning Model](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb)
 
 Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a polynomial regression. For our train test split we used the random state at 42 and the default test size of 25%. We choose the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
 
@@ -130,6 +134,12 @@ Some limitations of a polynomial regression model is that the presence of a few 
     - Quantile Transformer with uniform distribution
     - Quantile Transformer with normal distribution
     - Normalizer
+
+After the initial machine learning model we decided to be able to tell a the story that we want we need to add other fish types to the model. After taking the [total_data.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv) and running it through our preprocessing in [DB_Connection.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb) we used [daily_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/daily_fish_grouping.ipynb) and [weekly_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/weekly_fish_grouping.ipynb) to create [dailyWeatherTable.csv]() and [combineddata2.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/combineddata2.csv). From the updated dataset we ran our [machine learning](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb) for each fish type for week and day. After running the train, test, and predict we took the [dailyWeatherTable.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/dailyWeatherTable.csv) and using our model predicted a fish count for each [day](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/daily_ml_predictions.csv). 
+
+
+
+
 
 ## Database
 The database that we chose to store the static data is PostgreSQL and pgAdmin is the tool that extracts the data from the database. The database is setup with four tables. They are **datevalue**, **bonweather**, **bonfishcounts**, and **combineddata**.
@@ -164,20 +174,12 @@ Our interactive dashboard will allow users to put in a desired day to go fishing
 We will use Tableau and pgAdmin for our final project. 
     
 
-## Discussion
+## Discussion 
 Other external variables: 
 - hatcheries
 - ocean weather conditions
 - river weather conditions
 - sea lions
-
-
-### Team Roles
-- John: X (Tech) 
-- Lasitha: Circle (SQL Database)
-- Jeremy: Triangle (ML Model) 
-- Mike: Square (Git)  
-
 
 
 
