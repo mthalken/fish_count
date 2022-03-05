@@ -1,0 +1,52 @@
+Notebooks
+- bonFishCount.ipynb: initial look at the dart website data.
+- bonFish(practice).ipynb: (duplicate - do we need)
+- bonWeather-Copy1.ipynb: initial look at NOAA weather data from the Bonneville Dam (Bonneville_Dam_OR.csv).
+- bonWeather.ipynb: took NOAA weather data from the Bonneville Dam (Bonneville_Dam_OR.csv) and preprocessed to create bonWeather.csv.
+- Catch_Cleaned.ipynb: preprocessing of fish catch data from ColumbiaBasin_combined_count.csv to CombinedCatchData.csv.
+- DB_Connection.ipynb: we took our raw data and uploaded it to postgres database. Retrieved data from database after cleaning and organizing to create combineddata.csv.
+- daily_fish_grouping.ipynb: using combineddata2.csv with all fish types to groupby day to average weather conditions.
+- data_exploration.ipynb: exploration of the combineddata.csv after postgres joining. Created data exploration charts and started testing different machine learning models. 
+- fish_ml_practice.ipynb: (duplicate - do we need?)
+- grouping_for_analysis.ipynb: further exploration of machine learning where we looking at monthly, weekly, and daily groupby's and tried PCA and scalers. 
+- joining_data.ipynb: code to take all the csv's from the folder BonFish/ and combine into one dataframe (total_data.csv).
+- ml_model_on_all_fish_types.ipynb: our final machine learning model taking the weekly and daily csv's and applying the refactored machine learning model. Also took the predicted weather data (dailyWeatherTable.csv) and applied the trained daily model to predict fish counts by day. Returned was accuracy scores for weekly and daily models as well as predicted fish counts(daily_ml_predictions.csv).
+- poly_regression.ipynb: first test of a polynomial regression
+- poly_regression_&_scaling.ipynb: took our polynomial regression and tested different scalers, normalizers, transformers, testing sizes, and random states.
+- refactored_ml.ipynb: further look at the machine learning where we tried different scalers and normalizers.
+- testing_types_of_linear_regression.ipynb: further machine learning analysis where we tried different types of linear regression.
+- Water_temp.ipynb: exploratory analysis of WaterTemp90_22.tsv.
+- weekly_fish_grouping.ipynb: using combineddata2.csv with all fish types to groupby week to average weather conditions.
+
+
+Resources
+- BonFish
+  - 1990 to 2022 Bonneville fish count csv's
+  - WaterTemp90_20.tsv (?)
+
+- Fish_catch
+  - 2013 to 2018 fish catch data in xlsx
+  - catch summary in csv
+
+- river 
+  - river mapping data (not used)
+
+- weather
+  - Bonneville_Dam_OR.csv: NOAA weather data 
+  - bonWeather.csv: cleaned and preprocessed NOAA weather data 
+  - dailyWeatherTable.csv: daily average over 30 years of weather conditions 
+
+- refactored_data
+  - daily_fish_groups: daily data for all fish types for machine learning
+  - weekly_fish_groups: weekly data for all fish types for machine learning
+  - ColumbiaBasin_combined_count.csv: original catch count dataset
+  - CombinedCatchData.csv: cleaned dataset from ColumbiaBasin_combined_count.csv
+  - combineddata.csv: initial dataset from database connection for machine learning exploration
+  - combineddata2.csv: final dataset from database connection for weekly and daily machine learning
+  - daily_ml_predictions.csv: data that will be used for visualization of daily predicted weather.
+  - month_averages.csv: initial monthly average steelhead dataset for exploratory analysis
+  - stlhd_count.csv: initial steelhead dataset for exploratory analysis
+  - total_data.csv: all the csv's from the folder BonFish/ and combined into one dataframe
+  - week_averages.csv: initial weekly average steelhead dataset for exploratory analysis
+
+Images
