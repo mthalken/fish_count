@@ -97,12 +97,12 @@ Code:
 - [Grouping](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/grouping_for_analysis.ipynb)
 - 
 
-To preprocess our data we combined our csv [files](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish), found the target column and featured columns and dropped the NaN rows. We then grouped the data by day, month, and year with an aggregate mean to prepared for our machine learning model. 
-- Target Column: stlheadcount
+To preprocess our data we combined our csv [files](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish) and [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/bonWeather.csv), found the target columns and featured columns. Before we grouped by day month and year with an aggregate mean we created new dataframes for each fish type and dropped the NaN rows. 
+- Target Column: stlheadcount, chinookcount, shadcount, sockeyecount, and cohocount
 - Featured Columns: maxtempf, mintempf, precipitationinch, and watertempf
 
-![png](https://github.com/mthalken/fish_count/blob/main/Images/cleaned_data.png)
-
+<!-- ![png](https://github.com/mthalken/fish_count/blob/main/Images/cleaned_data.png) -->
+need to change with combineddate2.csv
 
 ## Machine Learning Model
 Code: 
@@ -135,10 +135,22 @@ Some limitations of a polynomial regression model is that the presence of a few 
     - Quantile Transformer with normal distribution
     - Normalizer
 
-After the initial machine learning model we decided to be able to tell a the story that we want we need to add other fish types to the model. After taking the [total_data.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv) and running it through our preprocessing in [DB_Connection.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb) we used [daily_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/daily_fish_grouping.ipynb) and [weekly_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/weekly_fish_grouping.ipynb) to create [dailyWeatherTable.csv]() and [combineddata2.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/combineddata2.csv). From the updated dataset we ran our [machine learning](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb) for each fish type for week and day. After running the train, test, and predict we took the [dailyWeatherTable.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/dailyWeatherTable.csv) and using our model predicted a fish count for each [day](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/daily_ml_predictions.csv). 
+After the initial machine learning model we decided to be able to tell a the story that we want we need to add other fish types to the model. After taking the [total_data.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv) and running it through our preprocessing in [DB_Connection.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb) we used [daily_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/daily_fish_grouping.ipynb) and [weekly_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/weekly_fish_grouping.ipynb) to create [dailyWeatherTable.csv]() and [combineddata2.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/combineddata2.csv). From the updated dataset we ran our [machine learning](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb) for each fish type for week and day. After running the train, test, and predict we took the [dailyWeatherTable.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/dailyWeatherTable.csv) and using our model predicted a fish count for each [day](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/daily_ml_predictions.csv). We stuck with the polynomial regression with our train test split we used the random state at 42 and the default test size of 25%.
 
+Linear Regression Score:
+![png](https://github.com/mthalken/fish_count/blob/main/Images/linear_regression_score.png)
 
+Polynomial Regression Score:
+![png](https://github.com/mthalken/fish_count/blob/main/Images/polynomial_regression_score.png)
 
+Polynomial Regression Score with Random State:
+![png](https://github.com/mthalken/fish_count/blob/main/Images/polynomial_regression_score_refactored_1.png)
+
+Final Weekly Score:
+![png](https://github.com/mthalken/fish_count/blob/main/Images/weekly_ml_accuracy.png)
+
+Final Daily Score:
+![png](https://github.com/mthalken/fish_count/blob/main/Images/daily_ml_accuracy.png)
 
 
 ## Database
@@ -173,6 +185,10 @@ Our interactive dashboard will allow users to put in a desired day to go fishing
 
 We will use Tableau and pgAdmin for our final project. 
     
+
+## Results
+
+
 
 ## Discussion 
 Other external variables: 
