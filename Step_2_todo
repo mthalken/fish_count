@@ -17,11 +17,11 @@ GitHub
     ✔ Description of the communication protocols has been removed @done(22-03-04 16:45)
     ☐ Cohesive, structured outline of the project
     ☐ Add catch data and description to data exploration section
-    ☐ Clean up data section with data used
+    ✔ Clean up data section with data used @done(22-03-05 09:25)
     ✔ Add to definitions @done(22-03-04 16:50)
-    ☐ Review data preprocessing section to add other fish and update notebooks
-    ☐ Update Machine learning section with new code and explanation
-    ☐ Add images of accuracy scores
+    ✔ Review data preprocessing section to add other fish and update notebooks @done(22-03-05 17:13)
+    ✔ Update Machine learning section with new code and explanation @done(22-03-05 17:13)
+    ✔ Add images of accuracy scores @done(22-03-05 11:53)
     ☐ Review Database section
     ☐ Add images of dashboard to dashboard section
     ☐ Discussion
@@ -44,10 +44,10 @@ ML Model
 ✔ Description of preliminary feature engineering and preliminary feature selection, including the decision-making process @done(22-02-27 11:56)
 ✔ Description of how data was split into training and testing sets @done(22-02-27 11:53)
 ✔ Explanation of model choice, including limitations and benefits @done(22-02-27 11:53)
-☐ Description of feature engineering and the feature selection, including their decisionmaking process
-☐ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
-☐ Description of how they have trained the model thus far, and any additional training that will take place
-☐ Description of current accuracy score 
+✔ Description of feature engineering and the feature selection, including their decisionmaking process @done(22-03-05 17:00)
+✔ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) @done(22-03-05 17:00)
+✔ Description of how they have trained the model thus far, and any additional training that will take place @done(22-03-05 17:00)
+✔ Description of current accuracy score @done(22-03-05 17:00)
 ☐ 4- Description and explanation of model's confusion matrix, including final accuracy score
 ☐ 4- Addresses the question or problem the team is solving
 
