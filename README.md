@@ -13,9 +13,9 @@ The purpose of this analysis is to see if wee can use machine learning on weathe
 7. Present dashboard and results. 
 
 ## Team
+- Jeremy Petty  - [GitHub](https://github.com/jp3tty) | [LinkedIn](https://www.linkedin.com/in/jeremy-petty-7712a1207/) 
 - John Garbett - [GitHub](https://github.com/jgarbett44) | [LinkedIn](https://www.linkedin.com/in/john-garbett-94699267/) 
 - Lasitha Liyanage - [GitHub](https://github.com/LasithaL) | [LinkedIn](https://www.linkedin.com/in/lasitha-liyanage-5a599aa/) 
-- Jeremy Petty  - [GitHub](https://github.com/jp3tty) | [LinkedIn](https://www.linkedin.com/in/jeremy-petty-7712a1207/) 
 - Mike Thalken - [GitHub](https://github.com/mthalken) | [LinkedIn](https://www.linkedin.com/in/mike-thalken/) 
 
 ### Questions
@@ -175,8 +175,12 @@ Code:
 
 
 ## Interactive Dashboard(In Progress)
+
+### Presentation
 [Google Slides](https://docs.google.com/presentation/d/12xjKybODUNdbOfk8_LaIQnlpM5YYDo1VpuQSZEZ8MsU/edit?usp=sharing)
 
+
+### Tableau
 Our interactive dashboard will allow users to put in a desired day to go fishing and our dashboard will return the following:
 - Machine Learning predictions from historic data on Steelhead counts
 - Current Weather Conditions
