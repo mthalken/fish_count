@@ -1,7 +1,7 @@
 # Steelhead Count
 
 # Overview
-The purpose of this analysis is to see if wee can use machine learning on weather conditions including air temp, precipitation, and water temp to predict fish population counts at the Bonneville Dam on the Columbia River between Oregon and Washington. We want to be able to provide a tool for people to use to see wether based on historical data if the date they want to go fishing has been ideal and what the historical weather has been on that particular day. 
+The purpose of this analysis is to see if we can use machine learning on weather conditions including air temp, precipitation, and water temp to predict fish population counts at the Bonneville Dam on the Columbia River between Oregon and Washington. We want to be able to provide a tool for people to use to see wether based on historical data if the date they want to go fishing has been ideal and what the historical weather has been on that particular day. 
 
 ## Project Overview
 1. Perform exploratory analysis. 
