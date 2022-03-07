@@ -16,14 +16,14 @@ GitHub
     ✔ Description of analysis phase @done(22-03-01 18:45)
     ✔ Description of the communication protocols has been removed @done(22-03-04 16:45)
     ☐ Cohesive, structured outline of the project
-    ☐ Add catch data and description to data exploration section
+    ✔ Add catch data and description to data exploration section @done(22-03-06 20:32)
     ✔ Clean up data section with data used @done(22-03-05 09:25)
     ✔ Add to definitions @done(22-03-04 16:50)
-    ☐ Review data preprocessing section to add other fish and update notebooks
+    ✔ Review data preprocessing section to add other fish and update notebooks @done(22-03-06 20:44)
     ✔ Update Machine learning section with new code and explanation @done(22-03-05 17:13)
     ✔ Add images of accuracy scores @done(22-03-05 11:53)
-    ☐ Review Database section
-    ☐ Add images of dashboard to dashboard section
+    ✔ Review Database section @done(22-03-06 20:44)
+    ✔ Add images of dashboard to dashboard section @done(22-03-06 20:44)
     ☐ Discussion
     ☐ Results
     ✔ Link to Google Slides draft presentation @done(22-03-01 18:51)
@@ -32,7 +32,7 @@ GitHub
 ✔ Code necessary to perform exploratory analysis @done(22-03-01 18:45)
 ✔ Most code necessary to complete machine learning portion of the project @done(22-03-01 18:46)
 ✔ One branch for each team member @done(22-03-01 18:47)
-☐ Each team member has a total of 12 commits
+✔ Each team member has a total of 12 commits @done(22-03-06 20:45)
 ☐ 4- All code is clean, commented, easy to read, and adheres to a coding standard
 ☐ 4- At least 3 images
 ☐ 4- requirements.txt file
@@ -63,9 +63,9 @@ Dashboard
 ✔ Storyboard on a Google Slide(s) @done(22-02-27 20:14)
 ✔ Description of the tool(s) that will be used to create the final dashboard @done(22-02-27 20:15)
 ✔ Description of interactive element(s) @done(22-02-27 20:15)
-☐ Images from the initial analysis
-☐ Data(images or report) from the machine learning task
-☐ At least one interactive element
+✔ Images from the initial analysis @done(22-03-06 20:45)
+✔ Data(images or report) from the machine learning task @done(22-03-06 20:45)
+✔ At least one interactive element @done(22-03-06 20:45)
 ☐ 4- Dashboard is published or the submission includes a screen capture video of it in action. 
 
 
@@ -74,10 +74,10 @@ Presentation
 ✔ Description of data Exploration @done(22-02-27 20:15)
 ✔ Description of analysis phase @done(22-02-27 20:15)
 ✔ Selected Topic @done(22-03-01 18:54)
-☐ Reason why they selected their topic
+✔ Reason why they selected their topic @done(22-03-06 20:45)
 ✔ Questions to hope to answer @done(22-03-01 18:54)
 ✔ Technologies, languages, tools, and algorithms used @done(22-03-01 18:54)
-☐ Slide in Google Slides
+✔ Slide in Google Slides @done(22-03-06 20:45)
 ☐ 4- Results of analysis
 ☐ 4- Recommendation for future analysis
 ☐ 4- Anything the team would have done differently
@@ -90,7 +90,3 @@ Presentation
     ☐ 4- Submission includes speaker notes, flashcards, or a video of the presentation rehearsal
 
 
-Tableau
-☐ Worksheets:
-    ☐ bar or line
-☐ Current weather conditions

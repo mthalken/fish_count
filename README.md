@@ -102,8 +102,8 @@ To preprocess our data we combined our csv [files](https://github.com/mthalken/f
 - Target Column: stlheadcount, chinookcount, shadcount, sockeyecount, and cohocount
 - Featured Columns: maxtempf, mintempf, precipitationinch, and watertempf
 
-<!-- ![png](https://github.com/mthalken/fish_count/blob/main/Images/cleaned_data.png) -->
-need to change with combineddate2.csv
+![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/combineddate2.png)
+
 
 ## Machine Learning Model
 Code: 
@@ -183,10 +183,31 @@ Code:
 
 
 ### Tableau
-Our interactive dashboard will allow users to put in a desired day to go fishing and our dashboard will return the following:
-- Machine Learning predictions from historic data on Steelhead counts
-- Current Weather Conditions
-- Expected Weather Conditions
+Our Tableau dashboard will show Bonneville fish data in three dashboards:
+- Historical
+![png](https://github.com/mthalken/fish_count/blob/main/Images/historic_fish_count.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Historical_Weatherdata_LL.PNG)
+
+
+- Predictions
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Steelhead_Count_vs_Predict_LL.PNG)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Chinook_Count_vs_Predict_LL.PNG)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Coho_Count_vs_Predict_LL.PNG)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Bon_Fish_Pred_Dash_1_jp.PNG)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Bon_Fish_Pred_Dash_2_jp.PNG)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/bubble_predictions.png)
+
+
+- Catch
+![png](https://github.com/mthalken/fish_count/blob/main/Images/location_catch.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/bubble_catch.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Steelhead_Catch_13_18.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/Bonneville_Catch.png)
+
+
+
+Our interactive dashboard will allow users to vary filters by day, month, and year and return the following:
+- Machine Learning predictions from historic data on fish counts
 - Historical Data
     - counts
     - weather conditions
@@ -194,14 +215,16 @@ Our interactive dashboard will allow users to put in a desired day to go fishing
     - catch counts
 
 
-We will use Tableau and pgAdmin for our final project. 
-    
-
 ## Results
 
 
 
 ## Discussion 
+
+After running all fish through our machine learning model we took out Shad and Sockeye because the amount of data and the accuracy scores were not high enough. 
+
+Further opportunities for this project is to expand fish catch counts from just Steelhead to the other fish types. We could also add a map and location information based on fish count and catch data. 
+
 Other external variables: 
 - hatcheries
 - ocean weather conditions
