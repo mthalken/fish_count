@@ -49,14 +49,15 @@ CREATE TABLE CombinedData (
 	MinTempF NUMERIC,
 	PrecipitationInch NUMERIC,
 	WaterTempF NUMERIC,
-	StlheadCount NUMERIC
+	StlheadCount NUMERIC,
+	PRIMARY KEY (CountId)
 );
 
 CREATE TABLE CombinedData2 (
 	CountId INT NOT NULL,
 	YearValue VARCHAR(4) NOT NULL,
 	MonthValue VARCHAR(2) NOT NULL,
-	WeekNumber VARCHAR(2) NOT NULL,
+	WeekNumber NUMERIC NOT NULL,
 	LocationName VARCHAR(40),
 	DateRecorded DATE NOT NULL,
 	MaxTempF NUMERIC,
@@ -67,7 +68,8 @@ CREATE TABLE CombinedData2 (
 	ChinookCount NUMERIC,
 	SockeyeCount NUMERIC,
 	CohoCount NUMERIC,
-	ChadCount NUMERIC
+	ChadCount NUMERIC,
+	PRIMARY KEY (CountId)
 );
 
 CREATE TABLE daily_ml_predictions (
@@ -82,5 +84,6 @@ CREATE TABLE daily_ml_predictions (
 	ChinookPredict NUMERIC,
 	CohoPredict NUMERIC,
 	ChadPredict NUMERIC,
-	SockeyePredict NUMERIC
+	SockeyePredict NUMERIC,
+	PRIMARY KEY (DayofYear)
 );

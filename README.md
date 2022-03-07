@@ -36,6 +36,7 @@ The purpose of this analysis is to see if we can use machine learning on weather
 - Matplotlib 3.5.0
 - Numpy 1.20.3
 - Conda 4.11.0
+- Heroku
 
 
 ## Data Exploration
@@ -159,13 +160,14 @@ Final Daily Score:
 
 
 ## Database
-The database that we chose to store the static data is PostgreSQL and pgAdmin is the tool that extracts the data from the database. The database is setup with four tables. They are **datevalue**, **bonweather**, **bonfishcounts**, and **combineddata**.
+The database that we chose to store the static data is HEROKU. PostgreSQL and pgAdmin is the tool that extracts the data from the database. The database is setup with six tables. They are **datevalue**, **bonweather**, **bonfishcounts**, **combineddata**, **cobineddata2**, and **daily_ml_predictions**.
 - *datevalue:* The datevalue table stores the values for the year, month and weeknumber that can be referenced by any given date between 1/1/1990 through 12/31/2021.
 - *bonweather:* This table hold all weather data such as the max temperature, min temperature and the precipitation for any given date.
-- *bonfishcounts:* The bonfishcounts table hold the steelhead count and the water temperature for all data in the date range specified in the datavalue tabledescription.
-- *combineddata:* This table combines the data from the bonfishcounts, bonwether, and datevalue tables to produce a dataset that can be used later in the machine learning algorithm.
+- *bonfishcounts:* The bonfishcounts table hold the raw data steelhead, coho, chinook, sockeye, and chad counts and the water temperature for all data in the date range specified in the datavalue tabledescription.
+- *combineddata:* This table combines the data from the bonfishcounts, bonwether, and datevalue tables to produce a dataset that can be used later in the machine learning algorithm. This table only carries steelhead count data.
+- *combineddata2:* A second table was created to house an expanded set of data which include steelhead, coho, chinook, sockeye, chad count data and the water temperature in combination with the atmospheric data such as minimum temperature, maximum temperature and precipitation for a given day.
 
-The combineddata table is extracted into jupyter notebook where it can be used in analysis through machine learning.
+The combineddata table is cureently not being used in the data analysis. The combineddata2 table data is extracted into jupyter notebook where it can be used in analysis through machine learning.
 
 Code: 
 - The connection string where the data is extracted from the database is found here => [Database Connection](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb)
