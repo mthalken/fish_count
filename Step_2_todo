@@ -15,7 +15,7 @@ GitHub
     ✔ Description of data Exploration @done(22-02-27 11:42)
     ✔ Description of analysis phase @done(22-03-01 18:45)
     ✔ Description of the communication protocols has been removed @done(22-03-04 16:45)
-    ☐ Cohesive, structured outline of the project
+    ✔ Cohesive, structured outline of the project @done(22-03-09 17:20)
     ✔ Add catch data and description to data exploration section @done(22-03-06 20:32)
     ✔ Clean up data section with data used @done(22-03-05 09:25)
     ✔ Add to definitions @done(22-03-04 16:50)
@@ -24,8 +24,7 @@ GitHub
     ✔ Add images of accuracy scores @done(22-03-05 11:53)
     ✔ Review Database section @done(22-03-06 20:44)
     ✔ Add images of dashboard to dashboard section @done(22-03-06 20:44)
-    ☐ Discussion
-    ☐ Results
+    ✔ Discussion @done(22-03-09 17:20)
     ✔ Link to Google Slides draft presentation @done(22-03-01 18:51)
 ✔ 8 commits per person @done(22-03-01 18:47)
 ☐ Code is production ready
@@ -34,7 +33,7 @@ GitHub
 ✔ One branch for each team member @done(22-03-01 18:47)
 ✔ Each team member has a total of 12 commits @done(22-03-06 20:45)
 ☐ 4- All code is clean, commented, easy to read, and adheres to a coding standard
-☐ 4- At least 3 images
+✔ 4- At least 3 images @done(22-03-09 17:21)
 ☐ 4- requirements.txt file
 ☐ 4- Link to dashboard or link to video of dashboard demo
 ☐ 4- 16 commits per person
@@ -48,8 +47,8 @@ ML Model
 ✔ Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) @done(22-03-05 17:00)
 ✔ Description of how they have trained the model thus far, and any additional training that will take place @done(22-03-05 17:00)
 ✔ Description of current accuracy score @done(22-03-05 17:00)
-☐ 4- Description and explanation of model's confusion matrix, including final accuracy score
-☐ 4- Addresses the question or problem the team is solving
+✔ 4- Description and explanation of model's confusion matrix, including final accuracy score @done(22-03-09 17:21)
+✔ 4- Addresses the question or problem the team is solving @done(22-03-09 17:21)
 
 Database
 ✔ Database stores static data for use during the project @done(22-02-27 19:55)
@@ -78,9 +77,9 @@ Presentation
 ✔ Questions to hope to answer @done(22-03-01 18:54)
 ✔ Technologies, languages, tools, and algorithms used @done(22-03-01 18:54)
 ✔ Slide in Google Slides @done(22-03-06 20:45)
-☐ 4- Results of analysis
-☐ 4- Recommendation for future analysis
-☐ 4- Anything the team would have done differently
+✔ 4- Results of analysis @done(22-03-09 17:21)
+✔ 4- Recommendation for future analysis @done(22-03-09 17:21)
+✔ 4- Anything the team would have done differently @done(22-03-09 17:25)
 ☐ 4- Slides are primarily images or graphics (rather than text)
 ☐ 4- Images are clear, in high-def, and directly illustrative of subject matter
 ☐ 4- Live Presentation
