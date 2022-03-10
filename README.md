@@ -176,53 +176,32 @@ Code:
 
 
 
-## Interactive Dashboard(In Progress)
+## Interactive Dashboard
 
 ### Presentation
 [Google Slides](https://docs.google.com/presentation/d/12xjKybODUNdbOfk8_LaIQnlpM5YYDo1VpuQSZEZ8MsU/edit?usp=sharing)
 
 
 ### Tableau
-Click [here]() to see the Tableau Story. 
+Click [here](https://public.tableau.com/app/profile/mike.thalken/viz/MT-Fish/Story1?publish=yes) to see the Tableau Story. 
 
-Our Tableau dashboard will show Bonneville fish data in three dashboards:
-- Historical
-![png](https://github.com/mthalken/fish_count/blob/main/Images/historic_fish_count.png)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Historical_Weatherdata_LL.PNG)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_historic_1.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_historic_2.png)
 
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_predictions_1.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_predictions_2.png)
 
-- Predictions
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Steelhead_Count_vs_Predict_LL.PNG)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Chinook_Count_vs_Predict_LL.PNG)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Coho_Count_vs_Predict_LL.PNG)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Bon_Fish_Pred_Dash_1_jp.PNG)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Bon_Fish_Pred_Dash_2_jp.PNG)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/bubble_predictions.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_catch_1.png)
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_catch_2.png)
 
+![png](https://github.com/mthalken/fish_count/blob/main/Images/tableau_going_fishing.png)
 
-- Catch
-![png](https://github.com/mthalken/fish_count/blob/main/Images/location_catch.png)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/bubble_catch.png)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Steelhead_Catch_13_18.png)
-![png](https://github.com/mthalken/fish_count/blob/main/Images/Bonneville_Catch.png)
-
-<!-- Our interactive dashboard will allow users to vary filters by day, month, and year and return the following:
-- Machine Learning predictions from historic data on fish counts
-- Historical Data
-    - counts
-    - weather conditions
-    - water temp
-    - catch counts -->
+## Results 
+While we were able to get a high (>90%) accuracy score on steelhead we were not able to replicate that for the other fish types. There are many external variables that can affect fish counts including reproductive cycles, climate change, ocean and surrounding area weather conditions, sea lions, and hatchery releases. Further analysis will need to be done on each specific fish type to find the best machine learning model and accounting for fish cycles. We were able to determine that the accumulation of decreased rain and increased outdoor and water temperature does affect steelhead count at the Bonneville Dam. 
 
 ## Discussion 
 Further opportunities for this project is to expand fish catch counts from just Steelhead to the other fish types. We could also add a map and location information based on fish count and catch data. Changing the type of machine learning depending on fish type would be another opportunity for model improvement. 
 
-Other external variables: 
-- Hatcheries
-- Ocean Weather Conditions
-- River Weather Conditions
-- Climate Change
-- Sea Lions
 
 
 
