@@ -1,7 +1,7 @@
-# Steelhead Count
+# Fish Count Predictions
 
 # Overview
-The purpose of this analysis is to see if we can use machine learning on weather conditions including air temp, precipitation, and water temp to predict fish population counts at the Bonneville Dam on the Columbia River between Oregon and Washington. We want to be able to provide a tool for people to use to see whether based on historical data if the date they want to go fishing has been ideal and what the historical weather has been on that particular day. 
+The purpose of this analysis is to see if we can use machine learning on weather conditions including air temperature, precipitation, and water temperature to predict fish population counts at the Bonneville Dam on the Columbia River between Oregon and Washington. We want to be able to provide a tool for people to use to see whether based on historical data if the date they want to go fishing has been ideal and what the historical weather has been on that particular day. 
 
 ## Project Overview
 1. Perform exploratory analysis. 
@@ -43,9 +43,8 @@ The purpose of this analysis is to see if we can use machine learning on weather
 Code: [Preliminary code](https://github.com/mthalken/fish_count/blob/main/Notebooks/data_exploration.ipynb)
 
 We combined data from Columbia Basin Research website and looked at Weeks, Months, Year, Maximum Temperature, Minimum Temperature, Precipitation, Water Temperature and Steelhead Count. We are attempting to answer our Null Hypothesis that weather conditions (air temperature, precipitation, water temperature) does not affect weekly steelhead counts. 
--- Did we use any other of our datasets?
 
-After cleaning the data we can see that there is exponential growth with an increase in Steelhead Count in comparison to Max Air Temp and Water Temp. 
+After cleaning the data we can see that there is an exponential growth with an increase in Steelhead Count in comparison to Max Air Temp and Water Temp. 
 
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Water_Temp.png)
 ![png](https://github.com/mthalken/fish_count/blob/mthalken/Images/Steelhead_Count_by_Max_Water_Temp.png)
@@ -96,9 +95,8 @@ Definitions:
 Code: 
 - [Combining Data](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/joining_data.ipynb)
 - [Grouping](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/grouping_for_analysis.ipynb)
-- 
 
-To preprocess our data we combined our csv [files](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish) and [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/bonWeather.csv), found the target columns and featured columns. Before we grouped by day month and year with an aggregate mean we created new dataframes for each fish type and dropped the NaN rows. 
+To preprocess our data we combined our csv [files](https://github.com/mthalken/fish_count/tree/main/Resources/BonFish) and [bonWeather.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/bonWeather.csv), found the target columns and featured columns. Before we grouped by day, month, and year with an aggregate mean we created new dataframes for each fish type and dropped the NaN rows. 
 - Target Column: stlheadcount, chinookcount, shadcount, sockeyecount, and cohocount
 - Featured Columns: maxtempf, mintempf, precipitationinch, and watertempf
 
@@ -113,9 +111,9 @@ Code:
 - [Polynomial Regression and Scaling](https://github.com/mthalken/fish_count/blob/mthalken/Notebooks/poly_regression_%26_scaling.ipynb)
 - [Refactored Machine Learning Model](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb)
 
-Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a polynomial regression. For our train test split we used the random state at 42 and the default test size of 25%. We choose the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
+Looking at our data and using machine learning to predict steelhead counts based on weather conditions we decided to use a supervised polynomial regression. For our train, test, and split we used the random state at 42 and the default test size of 25%. We choose to use the polynomial regression model as our data had exponential growth and was multivariate. We also tried other supervised machine learning models and were not able to reach the desired accuracy. 
 
-Some limitations of a polynomial regression model is that the presence of a few outliers and have large effects on results and there are fewer model validation tools for detecting outliers than there are in linear models.
+Some limitations of a polynomial regression model is that the presence of a few outliers can have large effects on results and there are also fewer model validation tools for detecting outliers than there are in linear models.
 - other machine learning models we tried:
     - Non-Negative Least Squares
     - Ridge Regression and Classification
@@ -136,7 +134,9 @@ Some limitations of a polynomial regression model is that the presence of a few 
     - Quantile Transformer with normal distribution
     - Normalizer
 
-After the initial machine learning model we decided to be able to tell a the story that we want we need to add other fish types to the model. After taking the [total_data.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv) and running it through our preprocessing in [DB_Connection.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb) we used [daily_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/daily_fish_grouping.ipynb) and [weekly_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/weekly_fish_grouping.ipynb) to create [dailyWeatherTable.csv]() and [combineddata2.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/combineddata2.csv). From the updated dataset we ran our [machine learning](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb) for each fish type for week and day. After running the train, test, and predict we took the [dailyWeatherTable.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/dailyWeatherTable.csv) and using our model predicted a fish count for each [day](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/daily_ml_predictions.csv). We stuck with the polynomial regression with our train test split we used the random state at 42 and the default test size of 25%.
+After the initial machine learning model we decided to be able to tell a the story that we want we need to add other fish types to our dashboard. After taking the [total_data.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/total_data.csv) and running it through our preprocessing in [DB_Connection.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/DB_Connection.ipynb) we used [daily_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/daily_fish_grouping.ipynb) and [weekly_fish_grouping.ipynb](https://github.com/mthalken/fish_count/blob/main/Notebooks/weekly_fish_grouping.ipynb) to create [dailyWeatherTable.csv]() and [combineddata2.csv](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/combineddata2.csv). From the updated dataset we ran our [machine learning](https://github.com/mthalken/fish_count/blob/main/Notebooks/ml_model_on_all_fish_types.ipynb) for each fish type for week and day. After running the train, test, and predict we took the [dailyWeatherTable.csv](https://github.com/mthalken/fish_count/blob/main/Resources/weather/dailyWeatherTable.csv) and using our model predicted a fish count for each [day](https://github.com/mthalken/fish_count/blob/main/Resources/refactored_data/daily_ml_predictions.csv). We stuck with the polynomial regression and changed the train, test, and split random state at vary dependant on the fish. 
+
+After running all fish through our machine learning model we took out Shad and Sockeye because the amount of data and the accuracy scores were not high enough.
 
 Linear Regression Score:
 
@@ -183,6 +183,8 @@ Code:
 
 
 ### Tableau
+Click [here]() to see the Tableau Story. 
+
 Our Tableau dashboard will show Bonneville fish data in three dashboards:
 - Historical
 ![png](https://github.com/mthalken/fish_count/blob/main/Images/historic_fish_count.png)
@@ -204,32 +206,23 @@ Our Tableau dashboard will show Bonneville fish data in three dashboards:
 ![png](https://github.com/mthalken/fish_count/blob/main/Images/Steelhead_Catch_13_18.png)
 ![png](https://github.com/mthalken/fish_count/blob/main/Images/Bonneville_Catch.png)
 
-
-
-Our interactive dashboard will allow users to vary filters by day, month, and year and return the following:
+<!-- Our interactive dashboard will allow users to vary filters by day, month, and year and return the following:
 - Machine Learning predictions from historic data on fish counts
 - Historical Data
     - counts
     - weather conditions
     - water temp
-    - catch counts
-
-
-## Results
-
-
+    - catch counts -->
 
 ## Discussion 
-
-After running all fish through our machine learning model we took out Shad and Sockeye because the amount of data and the accuracy scores were not high enough. 
-
-Further opportunities for this project is to expand fish catch counts from just Steelhead to the other fish types. We could also add a map and location information based on fish count and catch data. 
+Further opportunities for this project is to expand fish catch counts from just Steelhead to the other fish types. We could also add a map and location information based on fish count and catch data. Changing the type of machine learning depending on fish type would be another opportunity for model improvement. 
 
 Other external variables: 
-- hatcheries
-- ocean weather conditions
-- river weather conditions
-- sea lions
+- Hatcheries
+- Ocean Weather Conditions
+- River Weather Conditions
+- Climate Change
+- Sea Lions
 
 
 
