@@ -1,10 +1,13 @@
 # Other files to ignore
+
 config.py
 .DS_Store
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+.fish_count.vpp.lck
+fish_count.vpp.bak_000f
 
 # C extensions
 *.so

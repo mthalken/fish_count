@@ -4,7 +4,7 @@ CREATE TABLE DateValues (
 	DateValue DATE NOT NULL,
 	YearValue VARCHAR(4) NOT NULL,
 	MonthValue VARCHAR(2) NOT NULL,
-	WeekNumber VARCHAR(2) NOT NULL,
+	WeekNumber NUMERIC NOT NULL,
 	PRIMARY KEY (DateId)
 );
 
@@ -13,7 +13,7 @@ CREATE TABLE BonFishCounts (
 	YearWkValue VARCHAR(7) NOT NULL,
 	YearValue VARCHAR(4) NOT NULL,
 	MonthValue VARCHAR(2) NOT NULL,
-	WeekNumber VARCHAR(2) NOT NULL,
+	WeekNumber NUMERIC NOT NULL,
 	LocationName VARCHAR(40),
 	CountDate DATE NOT NULL,
 	ChinookCount NUMERIC,
@@ -29,7 +29,7 @@ CREATE TABLE BonWeather (
 	CountId INT NOT NULL,
 	YearValue VARCHAR(4) NOT NULL,
 	MonthValue VARCHAR(2) NOT NULL,
-	WeekNumber VARCHAR(2) NOT NULL,
+	WeekNumber NUMERIC NOT NULL,
 	LocationName VARCHAR(40),
 	DateRecorded DATE NOT NULL,
 	MaxTempF NUMERIC,
@@ -42,7 +42,7 @@ CREATE TABLE CombinedData (
 	CountId INT NOT NULL,
 	YearValue VARCHAR(4) NOT NULL,
 	MonthValue VARCHAR(2) NOT NULL,
-	WeekNumber VARCHAR(2) NOT NULL,
+	WeekNumber NUMERIC NOT NULL,
 	LocationName VARCHAR(40),
 	DateRecorded DATE NOT NULL,
 	MaxTempF NUMERIC,
