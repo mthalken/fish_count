@@ -166,6 +166,8 @@ The database that we chose to store the static data is HEROKU. PostgreSQL and pg
 - *bonfishcounts:* The bonfishcounts table hold the raw data steelhead, coho, chinook, sockeye, and chad counts and the water temperature for all data in the date range specified in the datavalue tabledescription.
 - *combineddata:* This table combines the data from the bonfishcounts, bonwether, and datevalue tables to produce a dataset that can be used later in the machine learning algorithm. This table only carries steelhead count data.
 - *combineddata2:* A second table was created to house an expanded set of data which include steelhead, coho, chinook, sockeye, chad count data and the water temperature in combination with the atmospheric data such as minimum temperature, maximum temperature and precipitation for a given day.
+- *combineddata2:* Additional fish species were added to the combneddata table to create combineddata2. The final machine learning algorithms were applied to this table
+- *ml_daily_predictions:* This tale carries the predicted values of steelhead, coho, chinnok, sockey, and chad associated with the historical weather data for a 365 days begining January 1 to December 31 over a 30 year period.
 
 The combineddata table is cureently not being used in the data analysis. The combineddata2 table data is extracted into jupyter notebook where it can be used in analysis through machine learning.
 
